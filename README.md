@@ -91,7 +91,7 @@ Demo Video:
 
 📁 `screenshots/Demo.mp4`
 
-*(Replace this with a YouTube or Drive link if you upload it online.)*
+*https://drive.google.com/file/d/16Ap-lEsR4EVjDfX7FVFhQsb3TABQRwfh/view?usp=sharing*
 
 ---
 
@@ -119,6 +119,7 @@ VITE_GEMINI_API_KEY=YOUR_API_KEY
 
 The application is containerized using Docker and deployed on **Google Cloud Run**.
 
+Link:  https://deadline-guardian-1077625683515.asia-south1.run.app
 ---
 
 ## 👩‍💻 Author
