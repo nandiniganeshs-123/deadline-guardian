@@ -5,6 +5,7 @@ import {
   getDocs,
   doc,
   updateDoc,
+  deleteDoc,
   query,
   where,
 } from "firebase/firestore";
