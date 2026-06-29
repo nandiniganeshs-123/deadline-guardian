@@ -118,8 +118,8 @@ VITE_GEMINI_API_KEY=YOUR_API_KEY
 ## ☁️ Deployment
 
 The application is containerized using Docker and deployed on **Google Cloud Run**.
+ https://deadline-guardian-1077625683515.asia-south1.run.app
 
-Link:  https://deadline-guardian-1077625683515.asia-south1.run.app
 ---
 
 ## 👩‍💻 Author
