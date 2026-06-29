@@ -1,44 +1,28 @@
 # 🚀 Deadline Guardian
 
-Deadline Guardian is an AI-powered productivity companion that helps users manage tasks, assess deadline risks, generate intelligent daily schedules, and break down complex tasks using Google's Gemini AI.
+An AI-powered productivity companion that helps users organize tasks, assess deadline risks, generate daily plans, break down complex tasks, and intelligently reschedule work using Google's Gemini AI.
 
 ---
 
 ## 📌 Problem Statement
 
-**PS1 – AI Productivity Companion**
+Managing multiple deadlines can be overwhelming. Users often struggle to prioritize tasks, estimate workload, and create realistic daily plans.
 
-Build an AI-powered application that improves personal productivity through intelligent task planning and scheduling.
+Deadline Guardian solves this by using AI to provide personalized task guidance and smart scheduling.
 
 ---
 
 ## ✨ Features
 
-### 🔐 Authentication
-- Google Sign-In using Firebase Authentication
-- Secure user-specific task management
-
-### 📋 Task Management
-- Create, edit and delete tasks
-- Set priorities and deadlines
-- Track task status
-
-### 🤖 AI Guardian
-- Deadline risk analysis
-- AI-generated productivity recommendations
-- Actionable task guidance
-
-### 🧩 AI Task Breakdown
-- Automatically splits large tasks into manageable subtasks
-
-### 📅 AI Daily Planner
-- Generates an optimized schedule for today's work
-- Prioritizes tasks intelligently
-- Highlights urgent deadlines
-
-### 🔄 AI Rescheduler
-- Reorganizes pending tasks
-- Suggests an optimized execution order
+- 🔐 Google Sign-In Authentication
+- ➕ Add, Edit & Delete Tasks
+- 📋 Task Dashboard
+- 🤖 AI Guardian (Risk Analysis)
+- 📅 AI Daily Planner
+- 🧩 AI Task Breakdown
+- 🔄 AI Rescheduler
+- ☁️ Firebase Authentication & Firestore
+- 🌐 Deployed on Google Cloud Run
 
 ---
 
@@ -48,98 +32,92 @@ Build an AI-powered application that improves personal productivity through inte
 - React
 - Vite
 - Tailwind CSS
-- JavaScript
 
-### Backend Services
+### Backend & Database
 - Firebase Authentication
 - Cloud Firestore
 
 ### AI
-- Gemini 2.5 Flash
-- Google AI Studio
-- @google/genai SDK
+- Google Gemini API
+- Google GenAI SDK
 
 ### Deployment
+- Google Cloud Run
 - Docker
 - Nginx
-- Google Cloud Run
 
 ---
 
 ## ☁️ Google Technologies Used
 
 - Google AI Studio
-- Gemini API
+- Gemini 2.5 Flash
 - Google Cloud Run
-- Cloud Build
-- Artifact Registry
 - Firebase Authentication
 - Cloud Firestore
+- Cloud Build
+- Artifact Registry
 
 ---
 
-## 🚀 Deployed Application Link
-
-Cloud Run URL:
-
-https://deadline-guardian-1077625683515.asia-south1.run.app
-
----
-
-## 📷 Screenshots
+## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
+
+### Add Task
+![Add Task](screenshots/Add%20Task.png)
+
+### My Tasks
+![My Tasks](screenshots/My%20Tasks.png)
 
 ### AI Guardian
-![AI Guardian](screenshots/guardian.png)
+![AI Guardian](screenshots/AI%20Guardian.png)
 
 ### AI Daily Planner
-![Daily Planner](screenshots/daily-planner.png)
+![AI Daily Planner](screenshots/AI%20Daily%20Planner.png)
 
 ### AI Rescheduler
-![Rescheduler](screenshots/rescheduler.png)
+![AI Rescheduler](screenshots/AI%20Reschduler.png)
 
-Example:
-
-- Dashboard
-- AI Guardian
-- AI Daily Planner
-- AI Rescheduler
+### Task Rescheduler
+![Task Rescheduler](screenshots/Task%20Rescheduler.png)
 
 ---
 
-## ⚙️ Installation
+## 🎥 Demo Video
 
-Clone the repository
+Demo Video:
+
+📁 `screenshots/Demo.mp4`
+
+*(Replace this with a YouTube or Drive link if you upload it online.)*
+
+---
+
+## 🚀 Run Locally
 
 ```bash
 git clone https://github.com/nandiniganeshs-123/deadline-guardian.git
-```
 
-Install dependencies
+cd deadline-guardian
 
-```bash
 npm install
+
+npm run dev
 ```
 
-Create a `.env` file
+Create a `.env` file:
 
 ```env
 VITE_GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-Run locally
+---
 
-```bash
-npm run dev
-```
+## ☁️ Deployment
 
-Build
-
-```bash
-npm run build
-```
+The application is containerized using Docker and deployed on **Google Cloud Run**.
 
 ---
 
@@ -152,6 +130,3 @@ https://github.com/nandiniganeshs-123
 
 ---
 
-## 📄 License
-
-This project was developed for the Google AI Studio Hackathon.
