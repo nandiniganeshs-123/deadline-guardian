@@ -1,8 +1,39 @@
 import { GoogleGenAI } from "@google/genai";
 
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
+console.log("Gemini API Key:", API_KEY);
+
 const ai = new GoogleGenAI({
   apiKey: import.meta.env.VITE_GEMINI_API_KEY,
 });
+
+async function callGemini(prompt) {
+  const maxRetries = 3;
+
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: prompt,
+      });
+
+      return response.text;
+    } catch (error) {
+      if (error.status === 503 && i < maxRetries - 1) {
+        console.log(`Retrying Gemini... Attempt ${i + 2}`);
+
+        await new Promise((resolve) =>
+          setTimeout(resolve, 2000 * (i + 1))
+        );
+
+        continue;
+      }
+
+      throw error;
+    }
+  }
+}
 
 export const generatePlan = async (
   taskName,
@@ -45,12 +76,9 @@ Rules:
 - Use emojis and headings.
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-  });
 
-  return response.text;
+
+ return await callGemini(prompt);
 };
 
 export const generateDailyPlan = async (tasks) => {
@@ -93,12 +121,8 @@ Output format:
 💡 Productivity Tip
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-  });
 
-  return response.text;
+ return await callGemini(prompt);
 };
 
 export const generateTaskBreakdown = async (task) => {
@@ -126,12 +150,8 @@ Rules:
 - No markdown.
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-  });
 
-  return response.text;
+return await callGemini(prompt);
 };
 
 export const generateReschedule = async (tasks) => {
@@ -164,10 +184,7 @@ Keep the response under 180 words.
 Do not use markdown.
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt,
-  });
 
-  return response.text;
+
+return await callGemini(prompt);
 };
