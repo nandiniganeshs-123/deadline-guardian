@@ -1,16 +1,157 @@
-# React + Vite
+# 🚀 Deadline Guardian
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deadline Guardian is an AI-powered productivity companion that helps users manage tasks, assess deadline risks, generate intelligent daily schedules, and break down complex tasks using Google's Gemini AI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Problem Statement
 
-## React Compiler
+**PS1 – AI Productivity Companion**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Build an AI-powered application that improves personal productivity through intelligent task planning and scheduling.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### 🔐 Authentication
+- Google Sign-In using Firebase Authentication
+- Secure user-specific task management
+
+### 📋 Task Management
+- Create, edit and delete tasks
+- Set priorities and deadlines
+- Track task status
+
+### 🤖 AI Guardian
+- Deadline risk analysis
+- AI-generated productivity recommendations
+- Actionable task guidance
+
+### 🧩 AI Task Breakdown
+- Automatically splits large tasks into manageable subtasks
+
+### 📅 AI Daily Planner
+- Generates an optimized schedule for today's work
+- Prioritizes tasks intelligently
+- Highlights urgent deadlines
+
+### 🔄 AI Rescheduler
+- Reorganizes pending tasks
+- Suggests an optimized execution order
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+
+### Backend Services
+- Firebase Authentication
+- Cloud Firestore
+
+### AI
+- Gemini 2.5 Flash
+- Google AI Studio
+- @google/genai SDK
+
+### Deployment
+- Docker
+- Nginx
+- Google Cloud Run
+
+---
+
+## ☁️ Google Technologies Used
+
+- Google AI Studio
+- Gemini API
+- Google Cloud Run
+- Cloud Build
+- Artifact Registry
+- Firebase Authentication
+- Cloud Firestore
+
+---
+
+## 🚀 Deployed Application Link
+
+Cloud Run URL:
+
+https://deadline-guardian-1077625683515.asia-south1.run.app
+
+---
+
+## 📷 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### AI Guardian
+![AI Guardian](screenshots/guardian.png)
+
+### AI Daily Planner
+![Daily Planner](screenshots/daily-planner.png)
+
+### AI Rescheduler
+![Rescheduler](screenshots/rescheduler.png)
+
+Example:
+
+- Dashboard
+- AI Guardian
+- AI Daily Planner
+- AI Rescheduler
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/nandiniganeshs-123/deadline-guardian.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file
+
+```env
+VITE_GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Run locally
+
+```bash
+npm run dev
+```
+
+Build
+
+```bash
+npm run build
+```
+
+---
+
+## 👩‍💻 Author
+
+**Nandini G**
+
+GitHub:
+https://github.com/nandiniganeshs-123
+
+---
+
+## 📄 License
+
+This project was developed for the Google AI Studio Hackathon.
